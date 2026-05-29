@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Animated informational landing page for Amazon Pay ICICI Bank Credit Card benefits with cashback calculator and official apply redirect." />
+  <title>Amazon Pay ICICI Credit Card | Animated Benefits Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <div class="top-warning">
+    <span>Informational demo website only.</span>
+    <strong>Do not enter PAN, OTP, CVV, Aadhaar, password, or banking details on unofficial pages.</strong>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Amazon Pay ICICI card home">
+        <span class="brand-icon">₹</span>
+        <span>Amazon Pay <b>ICICI</b></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#benefits">Benefits</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="#steps">How to Apply</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="https://www.amazon.in/cbcc/marketpage" target="_blank" rel="noopener noreferrer">Official Apply</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <div class="pill">
+            <span class="pulse-dot"></span>
+            Lifetime-free card info page
+          </div>
+          <h1>Amazon Pay ICICI Bank Credit Card</h1>
+          <p class="hero-subtitle">
+            A premium animated landing page explaining cashback benefits, eligibility basics, safe application steps, and an instant reward estimate calculator.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary magnetic" href="#calculator">Calculate Cashback</a>
+            <a class="btn secondary magnetic" href="https://www.amazon.in/cbcc/marketpage" target="_blank" rel="noopener noreferrer">Apply on Official Site</a>
+          </div>
+
+          <div class="trust-row" aria-label="Key highlights">
+            <div><strong class="count" data-target="0">0</strong><span>Joining Fee</span></div>
+            <div><strong><span class="count" data-target="5">0</span>%</strong><span>Prime Amazon Rewards*</span></div>
+            <div><strong><span class="count" data-target="3">0</span>%</strong><span>Non-Prime Amazon Rewards*</span></div>
+          </div>
+        </div>
+
+        <div class="card-stage reveal delay-1" aria-label="Animated credit card mockup">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="coin coin-a">₹</div>
+          <div class="coin coin-b">%</div>
+          <div class="coin coin-c">★</div>
+          <div class="credit-card" id="creditCard">
+            <div class="shine"></div>
+            <div class="card-top">
+              <span class="chip"></span>
+              <span class="mock-label">DEMO CARD</span>
+            </div>
+            <div class="card-title">Amazon Pay</div>
+            <div class="card-number">•••• •••• •••• 2026</div>
+            <div class="card-bottom">
+              <div>
+                <small>Cardholder</small>
+                <strong>YOUR NAME</strong>
+              </div>
+              <div>
+                <small>Powered by</small>
+                <strong>ICICI Bank</strong>
+              </div>
+            </div>
+          </div>
+          <div class="floating-panel panel-one">
+            <b>Reward Estimate</b>
+            <span id="heroEstimate">₹250 / month</span>
+          </div>
+          <div class="floating-panel panel-two">
+            <b>Safe Rule</b>
+            <span>Official site only</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Important card highlights">
+      <div class="marquee-track">
+        <span>Lifetime free*</span>
+        <span>No joining fee*</span>
+        <span>Amazon Pay rewards*</span>
+        <span>Prime member benefit*</span>
+        <span>Official redirect only</span>
+        <span>No sensitive data collection</span>
+        <span>Lifetime free*</span>
+        <span>No joining fee*</span>
+        <span>Amazon Pay rewards*</span>
+        <span>Prime member benefit*</span>
+      </div>
+    </section>
+
+    <section class="section benefits" id="benefits">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Benefits</span>
+        <h2>Clean benefit cards with animated hover effects</h2>
+        <p>Use this section to explain real benefits clearly with “T&C apply” instead of making approval promises.</p>
+      </div>
+
+      <div class="benefit-grid">
+        <article class="benefit-card reveal">
+          <span class="icon">₹0</span>
+          <h3>Lifetime Free*</h3>
+          <p>No joining fee and no renewal fee as per Amazon’s official card help page.</p>
+        </article>
+        <article class="benefit-card reveal delay-1">
+          <span class="icon">5%</span>
+          <h3>Prime Amazon Rewards*</h3>
+          <p>Prime members can get higher reward value on eligible Amazon transactions.</p>
+        </article>
+        <article class="benefit-card reveal delay-2">
+          <span class="icon">3%</span>
+          <h3>Non-Prime Rewards*</h3>
+          <p>Non-Prime members also get reward value on eligible Amazon transactions.</p>
+        </article>
+        <article class="benefit-card reveal delay-3">
+          <span class="icon">2%</span>
+          <h3>Amazon Pay Categories*</h3>
+          <p>Selected Amazon Pay categories and partner payments may provide extra rewards.</p>
+        </article>
+        <article class="benefit-card reveal">
+          <span class="icon">🌍</span>
+          <h3>Lower Forex Markup*</h3>
+          <p>ICICI mentions a 1.99% forex markup for international spends on this card.</p>
+        </article>
+        <article class="benefit-card reveal delay-1">
+          <span class="icon">🛡️</span>
+          <h3>Bank-Issued Card</h3>
+          <p>The card is issued by ICICI Bank in association with Amazon Pay and Visa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section calculator-section" id="calculator">
+      <div class="calculator-card reveal">
+        <div class="calculator-copy">
+          <span class="eyebrow">Calculator</span>
+          <h2>Monthly cashback estimator</h2>
+          <p>
+            Enter approximate monthly spending. This is only an estimate; actual rewards depend on official rules, eligible categories, exclusions, and bank terms.
+          </p>
+          <div class="mode-toggle" role="group" aria-label="Membership type">
+            <button class="active" data-member="prime">Prime</button>
+            <button data-member="nonPrime">Non-Prime</button>
+          </div>
+        </div>
+
+        <div class="calc-form">
+          <label>
+            Amazon shopping spend
+            <input type="number" id="amazonSpend" min="0" value="5000" inputmode="numeric" />
+          </label>
+          <label>
+            Amazon Pay selected categories
+            <input type="number" id="paySpend" min="0" value="2000" inputmode="numeric" />
+          </label>
+          <label>
+            Other monthly spends
+            <input type="number" id="otherSpend" min="0" value="3000" inputmode="numeric" />
+          </label>
+        </div>
+
+        <div class="result-box" aria-live="polite">
+          <span>Estimated monthly rewards</span>
+          <strong id="monthlyReward">₹0</strong>
+          <small id="yearlyReward">Estimated yearly rewards: ₹0</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split" id="eligibility">
+      <div class="glass-panel reveal">
+        <span class="eyebrow">Eligibility</span>
+        <h2>Show eligibility honestly</h2>
+        <p>Do not promise approval. Approval depends on bank policy, credit score, income, KYC, internal checks, and other criteria.</p>
+        <ul class="check-list">
+          <li>Applicant should meet bank age and KYC requirements.</li>
+          <li>PAN and valid mobile number are usually needed during official application.</li>
+          <li>Credit history and income may affect approval and credit limit.</li>
+          <li>Never share OTP or banking password with anyone.</li>
+        </ul>
+      </div>
+
+      <div class="safety-card reveal delay-1">
+        <div class="lock">🔒</div>
+        <h3>Safe website rule</h3>
+        <p>This demo does not collect personal financial data. The apply button opens an official Amazon/ICICI application page.</p>
+        <a class="btn primary" href="https://www.amazon.in/cbcc/marketpage" target="_blank" rel="noopener noreferrer">Go to Official Apply Page</a>
+      </div>
+    </section>
+
+    <section class="section steps" id="steps">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Process</span>
+        <h2>How users should apply safely</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="step reveal"><span>01</span><h3>Visit official page</h3><p>Use Amazon or ICICI Bank official website/application only.</p></div>
+        <div class="step reveal delay-1"><span>02</span><h3>Login & check eligibility</h3><p>Follow the bank’s official eligibility and KYC flow.</p></div>
+        <div class="step reveal delay-2"><span>03</span><h3>Complete verification</h3><p>Submit details only on the official secure page.</p></div>
+        <div class="step reveal delay-3"><span>04</span><h3>Use responsibly</h3><p>Pay full bill before due date and avoid cash withdrawal.</p></div>
+      </div>
+    </section>
+
+    <section class="section comparison">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Comparison</span>
+        <h2>Simple comparison section</h2>
+      </div>
+
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Amazon Pay ICICI</th>
+              <th>Basic card</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Annual fee</td><td>Lifetime free*</td><td>May apply</td></tr>
+            <tr><td>Best use</td><td>Amazon shopping + Amazon Pay</td><td>General spending</td></tr>
+            <tr><td>Reward type</td><td>Amazon Pay rewards/cashback style value*</td><td>Points/cashback varies</td></tr>
+            <tr><td>Approval</td><td>Bank decision</td><td>Bank decision</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-heading reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions users usually ask</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <details open>
+          <summary>Is this the official Amazon Pay ICICI website?</summary>
+          <p>No. This is a demo/informational landing page. Always apply only through official Amazon or ICICI Bank pages.</p>
+        </details>
+        <details>
+          <summary>Can I collect PAN or OTP on this website?</summary>
+          <p>No. That would be unsafe and may look like phishing. Redirect users to the official application page instead.</p>
+        </details>
+        <details>
+          <summary>Is approval guaranteed?</summary>
+          <p>No. Credit-card approval depends on ICICI Bank’s internal policy, eligibility, income, credit history, KYC, and other checks.</p>
+        </details>
+        <details>
+          <summary>How should I use a credit card safely?</summary>
+          <p>Pay the full bill before the due date, keep usage low, avoid cash withdrawal, and never share OTP/CVV/password.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section cta reveal">
+      <div class="cta-card">
+        <h2>Ready to use this project?</h2>
+        <p>Edit the text, update official links, and deploy it on GitHub Pages or Netlify. Keep the safety disclaimer visible.</p>
+        <div class="hero-actions center">
+          <a class="btn primary" href="https://www.amazon.in/cbcc/marketpage" target="_blank" rel="noopener noreferrer">Official Apply Link</a>
+          <a class="btn secondary" href="#home">Back to Top</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Disclaimer:</strong> This is an unofficial informational demo website. Amazon, Amazon Pay, ICICI Bank, and Visa names belong to their respective owners. Benefits are subject to official terms and conditions.</p>
+    <p>Project idea: Credit Card Benefits Information Website with Cashback Calculator.</p>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
